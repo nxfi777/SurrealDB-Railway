@@ -1,3 +1,3 @@
 FROM surrealdb/surrealdb:latest
 
-CMD [ "start" ]
+CMD [ "start", "--log=trace", "--user=root", "--pass=root", "memory"]
