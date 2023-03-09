@@ -1,4 +1,4 @@
-# SurrealDB of Railway
+# SurrealDB on Railway
 
 ## Default Config
 
