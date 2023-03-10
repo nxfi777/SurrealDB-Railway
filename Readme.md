@@ -2,9 +2,12 @@
 
 ## Default Config
 
-    log: trace
-    user: root
-    pass: root
+    LOG: trace
+    USER: root
+    PASS: root
+    PORT: 8000
+
+**Note: Set this Variables in Railway to override this values.**
 
 Just click the below button to deploy new instance of SurrealDB in-memory Database.
 
