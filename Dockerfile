@@ -2,8 +2,8 @@ FROM surrealdb/surrealdb:latest as binary
 FROM ubuntu:latest
 
 ARG LOG=trace
-ARG USER=admin
-ARG PASS=pass
+ARG USER=root
+ARG PASS=root
 ARG PORT=8080
 
 ENV LOG=$LOG
