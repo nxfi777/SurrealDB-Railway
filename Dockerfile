@@ -1,4 +1,4 @@
-FROM surrealdb/surrealdb:nightly as binary
+FROM surrealdb/surrealdb:latest as binary
 FROM ubuntu:latest
 
 ARG LOG=trace
