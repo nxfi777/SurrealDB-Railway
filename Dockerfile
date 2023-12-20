@@ -1,6 +1,5 @@
 FROM surrealdb/surrealdb:latest as binary
-FROM ubuntu:21.10
-RUN apt-get update && apt-get install -y apt-transport-https
+FROM ubuntu:latest
 
 ARG LOG=trace
 ARG USER=root
