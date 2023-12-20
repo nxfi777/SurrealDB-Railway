@@ -1,5 +1,5 @@
 FROM surrealdb/surrealdb:latest as binary
-FROM ubuntu:latest
+FROM ubuntu:20.04
 
 ARG LOG=trace
 ARG USER=root
