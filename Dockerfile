@@ -1,7 +1,6 @@
 FROM surrealdb/surrealdb:latest as binary
 FROM ubuntu:21.10
-RUN apt-get update
-RUN apt-get install libssl-dev
+RUN apt-get update && apt-get install -y apt-transport-https
 
 ARG LOG=trace
 ARG USER=root
