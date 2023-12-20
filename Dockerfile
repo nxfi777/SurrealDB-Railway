@@ -1,7 +1,7 @@
 FROM surrealdb/surrealdb:latest as binary
 FROM ubuntu:22.04
 
-RUN apt update && apt install glibc-source -y
+RUN apt update && apt upgrade -y
 
 ARG LOG=trace
 ARG USER=root
