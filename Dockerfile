@@ -1,7 +1,5 @@
 FROM surrealdb/surrealdb:latest as binary
-FROM ubuntu:latest
-
-RUN sudo apt update && sudo apt install libc6
+FROM ubuntu:20.4
 
 ARG LOG=trace
 ARG USER=root
