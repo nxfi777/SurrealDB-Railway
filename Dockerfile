@@ -1,7 +1,8 @@
-FROM surrealdb/surrealdb:1.0.0 as binary
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
-RUN apt update && apt upgrade -y
+RUN apt update && apt upgrade -y && apt-get install -y curl
+
+RUN curl -sSf https://install.surrealdb.com | sh
 
 ARG LOG=trace
 ARG USER=root
@@ -14,6 +15,7 @@ ENV PASS=$PASS
 ENV PORT=$PORT
 
 COPY start.sh .
-COPY --from=binary /surreal /bin
+
+RUN ["chmod", "+x", "/start.sh"]
 
 CMD ["/start.sh"]
