@@ -1,5 +1,5 @@
 FROM surrealdb/surrealdb:1.0.0 as binary
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 
 RUN apt update && apt upgrade -y
 
