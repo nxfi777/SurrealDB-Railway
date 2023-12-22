@@ -4,10 +4,10 @@ RUN apt update && apt upgrade -y && apt-get install -y curl
 
 RUN curl -sSf https://install.surrealdb.com | sh
 
-ENV LOG=trace
-ENV USER=root
-ENV PASS=root
-ENV PORT=8000
+ENV DB_LOG=trace
+ENV DB_USER=root
+ENV DB_PASS=root
+ENV DB_PORT=8080
 
 COPY start.sh .
 
