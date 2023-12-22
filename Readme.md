@@ -2,10 +2,10 @@
 
 ## Default Config
 
-    LOG: trace
-    USER: root
-    PASS: root
-    PORT: 8000
+    DB_LOG: trace
+    DB_USER: root
+    DB_PASS: root
+    DB_PORT: 8000
 
 **Note: Set this Variables in Railway to override these values.**
 
